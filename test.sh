@@ -44,11 +44,9 @@ fi
 clear
  
 echo "Enter Model(Example:SM-G9550): "
-#read model
+read model
 echo "Enter Region (Example:CHC): "
-#read region
-model='SM-G9550'
-region='TGY'
+read region
 echo ""
 check=$(samloader -m $model -r $region checkupdate)
 echo "Dowloading firmware..."
