@@ -160,6 +160,9 @@ mkdir rootzip
 
 wget -q -O rootzip/Magisk.zip https://github.com/topjohnwu/Magisk/releases/download/v22.0/Magisk-v22.0.apk
 
+mkdir system/preload/Magisk
+wget -q -O system/preload/Magisk/Magisk.apk https://github.com/topjohnwu/Magisk/releases/download/v22.0/Magisk-v22.0.apk
+
 echo "Downloding ${model:0:8} Kernel ... "
 echo ""
 if [[ "$model" == *"SM-G9500"* ]] ; then 
@@ -200,6 +203,7 @@ rm -rf system/app/MDMApp
 rm -rf system/app/SecurityLogAgent
 rm -rf system/app/SecurityProviderSEC
 rm -rf system/app/UniversalMDMClient
+rm -rf system/priv-app/ContainerAgent*
 rm -rf system/container
 rm -rf system/etc/permissions/knoxsdk_edm.xml
 rm -rf system/etc/permissions/knoxsdk_mdm.xml
@@ -213,24 +217,49 @@ rm -rf system/priv-app/SamsungPayStub
 rm -rf system/priv-app/SecureFolder
 rm -rf system/priv-app/SPDClient
 rm -rf system/priv-app/TeeService
-
 rm -rf system/lib/libvkservice
 rm -rf system/lib64/libvkservice
-
 rm -rf system/lib/libvkjni
 rm -rf system/lib64/libvkjni
-
 rm -rf system/etc/init/bootchecker.rc
 rm -rf system/secure_storage_daemon_system.rc
-
 rm -rf system/lib/liboemcrypto
+
+
+
+
+rm -rf system/preload/Excel_SamsungStub
+rm -rf system/preload/Gear360Editor_Beyond
+rm -rf system/preload/LinkedIn_SamsungStub
+rm -rf system/preload/PowerPoint_SamsungStub
+rm -rf system/preload/SamsungVideo
+rm -rf system/preload/SAssistant_downloadable
+rm -rf system/preload/Word_SamsungStub
+rm -rf system/preload/StoryEditor_Dream_N
+rm -rf system/preload/SlowMotionVideoEditor
+rm -rf system/preload/SmartSwitch
+rm -rf system/preload/SmartSwitchAgent
+rm -rf system/preload/CocktailQuickTool
+rm -rf system/preload/SamsungMagnifier3
+rm -rf system/preload/SearchWidgetAPP
+rm -rf system/preload/SPdfNote
+rm -rf system/preload/VideoTrimmer
+rm -rf system/preload/VideoEditorLite_Dream_N
+rm -rf system/preloadFotaOnly
+
+
+
+
+rm -rf system/app/PreloadAppDownload
+rm -rf system/priv-app/HybridRadio_P
+
 
 
 echo "Packing the Rom ... "
 echo ""
-zip -r -q -y StockMod.zip META-INF system rootzip
+zip -r -q -y StockMod.zip META-INF system rootzip boot.img
 
-rm -rf META-INF system
+rm -rf META-INF system rootzip boot.img 
 
 echo "You have port the rom successfully " 
 echo ""
