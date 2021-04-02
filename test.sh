@@ -320,7 +320,7 @@ rm -rf system/priv-app/MateAgent
 #rm -rf system/priv-app/PaymentFramework
 rm -rf system/priv-app/PeopleStripe
 rm -rf system/priv-app/SamsungCloudClient
-rm -rf system/priv-app/SamsungBilling
+#rm -rf system/priv-app/SamsungBilling
 rm -rf system/priv-app/SamsungMagnifier3
 rm -rf system/priv-app/SendHelpMessage
 rm -rf system/priv-app/SVoicePLM
