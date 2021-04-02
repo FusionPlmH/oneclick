@@ -346,7 +346,6 @@ rm -rf system/priv-app/SVoiceIME
 
 rm -rf system/priv-app/StickerCenter
 rm -rf system/priv-app/StickerFaceAR
-rm -rf system/priv-app/StickerStamp
 rm -rf system/priv-app/StickerWatermark
 
 
