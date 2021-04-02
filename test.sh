@@ -318,7 +318,7 @@ rm -rf system/priv-app/LedCoverAppDream
 rm -rf system/priv-app/LedCoverService
 rm -rf system/priv-app/ManagedProvisioning
 rm -rf system/priv-app/MateAgent
-rm -rf system/priv-app/PaymentFramework
+#rm -rf system/priv-app/PaymentFramework
 rm -rf system/priv-app/PeopleStripe
 rm -rf system/priv-app/SamsungCloudClient
 rm -rf system/priv-app/SamsungBilling
@@ -326,6 +326,8 @@ rm -rf system/priv-app/SamsungMagnifier3
 rm -rf system/priv-app/SecSettingsIntelligence
 rm -rf system/priv-app/SendHelpMessage
 rm -rf system/priv-app/SVoicePLM
+rm -rf system/priv-app/SettingsBixby
+rm -rf system/priv-app/SystemUIBixby2
 
 echo "Packing the Rom ... "
 echo ""
