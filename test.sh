@@ -246,9 +246,16 @@ rm -rf system/preload/SPdfNote
 rm -rf system/preload/VideoTrimmer
 rm -rf system/preload/VideoEditorLite_Dream_N
 rm -rf system/preload/NaverV_N
+rm -rf system/preload/HongbaoAssistant
+rm -rf system/preload/MateAgent
+rm -rf system/preload/LedCoverAppDream
+rm -rf system/preload/SamsungCloudClient
+rm -rf system/preload/SecEmail_P
+rm -rf system/preload/VisionIntelligence2_stub
+rm -rf system/preload/WechatPluginMiniApp
 rm -rf system/preloadFotaOnly
-
-
+rm -rf system/app/ChinaUnionPay
+rm -rf system/app/PDFViewer
 rm -rf system/app/ClipboardEdge
 rm -rf system/app/CocktailQuickTool
 rm -rf system/app/Facebook_stub
@@ -331,6 +338,11 @@ rm -rf system/priv-app/SystemUIBixby2
 rm -rf system/priv-app/CocktailBarService_v3.2
 rm -rf system/priv-app/SetupWizard
 rm -rf system/priv-app/GoogleRestore
+rm -rf system/priv-app/BixbyHome_Disable
+rm -rf system/priv-app/DynamicLockscreen
+rm -rf system/priv-app/SamsungCloudEnabler
+rm -rf system/priv-app/SmartEpdgTestApp
+rm -rf system/priv-app/SVoiceIME
 
 echo "Packing the Rom ... "
 echo ""
