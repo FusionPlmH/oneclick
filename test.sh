@@ -276,8 +276,11 @@ rm -rf system/app/Panorama360Viewer
 rm -rf system/app/SmartSwitchAgent
 rm -rf system/app/SmartReminder
 rm -rf system/app/PreloadAppDownload
-
-
+rm -rf system/app/Gmail2
+rm -rf system/app/MotionPanoramaViewer
+rm -rf system/app/SelfMotionPanoramaViewer
+rm -rf system/app/WebViewStub
+rm -rf system/app/VideoEditorLite_Dream_N
 rm -rf system/priv-app/HybridRadio_P
 rm -rf system/priv-app/AlipayService
 rm -rf system/priv-app/AppsEdgePanel_v3.2
@@ -295,6 +298,9 @@ rm -rf system/priv-app/Velvet
 rm -rf system/priv-app/Word_SamsungStub
 rm -rf system/priv-app/GearVRService
 rm -rf system/priv-app/GoogleDaydreamCustomization
+rm -rf system/priv-app/LinkedIn_SamsungStub
+rm -rf system/priv-app/BixbyHome
+rm -rf system/priv-app/HotwordEnrollment*
 
 
 
