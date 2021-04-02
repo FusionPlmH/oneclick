@@ -285,7 +285,7 @@ rm -rf system/app/Kaiti
 rm -rf system/app/Miao
 rm -rf system/app/ShaoNv
 rm -rf system/priv-app/HybridRadio_P
-#rm -rf system/priv-app/AlipayService
+rm -rf system/priv-app/AlipayService
 rm -rf system/priv-app/AppsEdgePanel_v3.2
 rm -rf system/priv-app/Excel_SamsungStub
 rm -rf system/priv-app/FBInstaller_NS
@@ -304,7 +304,7 @@ rm -rf system/priv-app/GoogleDaydreamCustomization
 rm -rf system/priv-app/LinkedIn_SamsungStub
 rm -rf system/priv-app/BixbyHome
 rm -rf system/priv-app/HotwordEnrollment*
-rm -rf system/priv-app/AuthFramework
+#rm -rf system/priv-app/AuthFramework
 rm -rf system/priv-app/BeaconManager
 rm -rf system/priv-app/Bixby
 rm -rf system/priv-app/BixbyAgentStub
@@ -317,7 +317,7 @@ rm -rf system/priv-app/LedCoverAppDream
 rm -rf system/priv-app/LedCoverService
 rm -rf system/priv-app/ManagedProvisioning
 rm -rf system/priv-app/MateAgent
-rm -rf system/priv-app/PaymentFramework
+#rm -rf system/priv-app/PaymentFramework
 rm -rf system/priv-app/PeopleStripe
 rm -rf system/priv-app/SamsungCloudClient
 rm -rf system/priv-app/SamsungBilling
