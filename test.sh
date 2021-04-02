@@ -254,6 +254,7 @@ rm -rf system/preload/SecEmail_P
 rm -rf system/preload/VisionIntelligence2_stub
 rm -rf system/preload/WechatPluginMiniApp
 rm -rf system/preloadFotaOnly
+rm -rf system/preload/LinkSharing*
 rm -rf system/app/ChinaUnionPay
 rm -rf system/app/PDFViewer
 rm -rf system/app/ClipboardEdge
@@ -294,6 +295,9 @@ rm -rf system/app/ShaoNv
 rm -rf system/app/EasyOneHand3
 rm -rf system/app/ARCore
 rm -rf system/app/GoogleVrServices
+rm -rf system/app/SmartMirroring
+rm -rf system/app/LinkSharing*
+rm -rf system/priv-app/LinkSharing*
 rm -rf system/priv-app/HybridRadio_P
 rm -rf system/priv-app/AlipayService
 rm -rf system/priv-app/AppsEdgePanel_v3.2
