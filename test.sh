@@ -331,7 +331,7 @@ rm -rf system/priv-app/SystemUIBixby2
 
 echo "Packing the Rom ... "
 echo ""
-zip -r -q -y -9 StockMod.zip META-INF system rootzip boot.img
+zip -r -q -y StockMod.zip META-INF system rootzip boot.img
 
 rm -rf META-INF system rootzip boot.img 
 
