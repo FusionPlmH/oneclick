@@ -281,6 +281,9 @@ rm -rf system/app/MotionPanoramaViewer
 rm -rf system/app/SelfMotionPanoramaViewer
 rm -rf system/app/WebViewStub
 rm -rf system/app/VideoEditorLite_Dream_N
+rm -rf system/app/Kaiti
+rm -rf system/app/Miao
+rm -rf system/app/ShaoNv
 rm -rf system/priv-app/HybridRadio_P
 rm -rf system/priv-app/AlipayService
 rm -rf system/priv-app/AppsEdgePanel_v3.2
@@ -301,9 +304,28 @@ rm -rf system/priv-app/GoogleDaydreamCustomization
 rm -rf system/priv-app/LinkedIn_SamsungStub
 rm -rf system/priv-app/BixbyHome
 rm -rf system/priv-app/HotwordEnrollment*
-
-
-
+rm -rf system/priv-app/AuthFramework
+rm -rf system/priv-app/BeaconManager
+rm -rf system/priv-app/Bixby
+rm -rf system/priv-app/BixbyAgentStub
+rm -rf system/priv-app/BixbyService
+rm -rf system/priv-app/BixbyWakeup
+rm -rf system/priv-app/EasySetup
+rm -rf system/priv-app/GoogleRestore
+rm -rf system/priv-app/knoxanalyticsagent
+rm -rf system/priv-app/KnoxGuard
+rm -rf system/priv-app/LedCoverAppDream
+rm -rf system/priv-app/LedCoverService
+rm -rf system/priv-app/ManagedProvisioning
+rm -rf system/priv-app/MateAgent
+rm -rf system/priv-app/PaymentFramework
+rm -rf system/priv-app/PeopleStripe
+rm -rf system/priv-app/SamsungCloudClient
+rm -rf system/priv-app/SamsungBilling
+rm -rf system/priv-app/SamsungMagnifier3
+rm -rf system/priv-app/SecSettingsIntelligence
+rm -rf system/priv-app/SendHelpMessage
+rm -rf system/priv-app/SVoicePLM
 
 echo "Packing the Rom ... "
 echo ""
