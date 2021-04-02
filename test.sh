@@ -245,7 +245,7 @@ rm -rf system/preload/SearchWidgetAPP
 rm -rf system/preload/SPdfNote
 rm -rf system/preload/VideoTrimmer
 rm -rf system/preload/VideoEditorLite_Dream_N
-rm -rf system/preload/NaverV_NV
+rm -rf system/preload/NaverV_N
 rm -rf system/preloadFotaOnly
 
 
