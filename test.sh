@@ -312,7 +312,6 @@ rm -rf system/priv-app/BixbyService
 rm -rf system/priv-app/BixbyWakeup
 rm -rf system/priv-app/EasySetup
 rm -rf system/priv-app/knoxanalyticsagent
-#rm -rf system/priv-app/KnoxGuard
 rm -rf system/priv-app/LedCoverAppDream
 rm -rf system/priv-app/LedCoverService
 rm -rf system/priv-app/ManagedProvisioning
@@ -326,6 +325,9 @@ rm -rf system/priv-app/SendHelpMessage
 rm -rf system/priv-app/SVoicePLM
 rm -rf system/priv-app/SettingsBixby
 rm -rf system/priv-app/SystemUIBixby2
+rm -rf system/priv-app/CocktailBarService_v3.2
+rm -rf system/priv-app/SetupWizard
+rm -rf system/priv-app/GoogleRestore
 
 echo "Packing the Rom ... "
 echo ""
