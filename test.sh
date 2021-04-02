@@ -249,10 +249,51 @@ rm -rf system/preload/NaverV_NV
 rm -rf system/preloadFotaOnly
 
 
-
-
+rm -rf system/app/ClipboardEdge
+rm -rf system/app/CocktailQuickTool
+rm -rf system/app/Facebook_stub
+rm -rf system/app/GearManagerStub
+rm -rf system/app/MSSkype_stub
+rm -rf system/app/PlayAutoInstallConfig
+rm -rf system/app/SBrowserEdge
+rm -rf system/app/SlowMotionVideoEditor
+rm -rf system/app/StoryEditor_Dream_N
+rm -rf system/app/VideoTrimmer
+rm -rf system/app/VisionIntelligence2_stub
+rm -rf system/app/WebManual
+rm -rf system/app/Yahoo*
+rm -rf system/app/YouTube
+rm -rf system/app/CarmodeStub
+rm -rf system/app/EasterEgg
+rm -rf system/app/EasymodeContactsWidget81
+rm -rf system/app/FBAppManager_NS
+rm -rf system/app/FlipboardBriefing
+rm -rf system/app/InteractivePanoramaViewer_WQHD
+rm -rf system/app/KidsHome_Installer
+rm -rf system/app/Maps
+rm -rf system/app/MirrorLink
+rm -rf system/app/Panorama360Viewer
+rm -rf system/app/SmartSwitchAgent
+rm -rf system/app/SmartReminder
 rm -rf system/app/PreloadAppDownload
+
+
 rm -rf system/priv-app/HybridRadio_P
+rm -rf system/priv-app/AlipayService
+rm -rf system/priv-app/AppsEdgePanel_v3.2
+rm -rf system/priv-app/Excel_SamsungStub
+rm -rf system/priv-app/FBInstaller_NS
+rm -rf system/priv-app/FBServices
+rm -rf system/priv-app/Finder
+rm -rf system/priv-app/FotaAgent
+rm -rf system/priv-app/GalaxyAppsWidget_Phone_Dream
+rm -rf system/priv-app/Gear360Editor_Beyond
+rm -rf system/priv-app/OneDrive_Samsung_v3
+rm -rf system/priv-app/PowerPoint_SamsungStub
+rm -rf system/priv-app/TaskEdgePanel_v3.2
+rm -rf system/priv-app/Velvet
+rm -rf system/priv-app/Word_SamsungStub
+
 
 
 
