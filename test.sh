@@ -284,6 +284,9 @@ rm -rf system/app/VideoEditorLite_Dream_N
 rm -rf system/app/Kaiti
 rm -rf system/app/Miao
 rm -rf system/app/ShaoNv
+rm -rf system/app/EasyOneHand3
+rm -rf system/app/ARCore
+rm -rf system/app/GoogleVrServices
 rm -rf system/priv-app/HybridRadio_P
 rm -rf system/priv-app/AlipayService
 rm -rf system/priv-app/AppsEdgePanel_v3.2
