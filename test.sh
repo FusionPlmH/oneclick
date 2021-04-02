@@ -293,6 +293,8 @@ rm -rf system/priv-app/PowerPoint_SamsungStub
 rm -rf system/priv-app/TaskEdgePanel_v3.2
 rm -rf system/priv-app/Velvet
 rm -rf system/priv-app/Word_SamsungStub
+rm -rf system/priv-app/GearVRService
+rm -rf system/priv-app/GoogleDaydreamCustomization
 
 
 
