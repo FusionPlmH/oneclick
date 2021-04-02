@@ -285,7 +285,7 @@ rm -rf system/app/Kaiti
 rm -rf system/app/Miao
 rm -rf system/app/ShaoNv
 rm -rf system/priv-app/HybridRadio_P
-rm -rf system/priv-app/AlipayService
+#rm -rf system/priv-app/AlipayService
 rm -rf system/priv-app/AppsEdgePanel_v3.2
 rm -rf system/priv-app/Excel_SamsungStub
 rm -rf system/priv-app/FBInstaller_NS
