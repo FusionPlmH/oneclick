@@ -304,7 +304,7 @@ rm -rf system/priv-app/GoogleDaydreamCustomization
 rm -rf system/priv-app/LinkedIn_SamsungStub
 rm -rf system/priv-app/BixbyHome
 rm -rf system/priv-app/HotwordEnrollment*
-rm -rf system/priv-app/AuthFramework
+#rm -rf system/priv-app/AuthFramework
 rm -rf system/priv-app/BeaconManager
 rm -rf system/priv-app/Bixby
 rm -rf system/priv-app/BixbyAgentStub
@@ -321,7 +321,7 @@ rm -rf system/priv-app/MateAgent
 #rm -rf system/priv-app/PaymentFramework
 rm -rf system/priv-app/PeopleStripe
 rm -rf system/priv-app/SamsungCloudClient
-rm -rf system/priv-app/SamsungBilling
+#rm -rf system/priv-app/SamsungBilling
 rm -rf system/priv-app/SamsungMagnifier3
 rm -rf system/priv-app/SecSettingsIntelligence
 rm -rf system/priv-app/SendHelpMessage
