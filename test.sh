@@ -344,6 +344,12 @@ rm -rf system/priv-app/SamsungCloudEnabler
 rm -rf system/priv-app/SmartEpdgTestApp
 rm -rf system/priv-app/SVoiceIME
 
+rm -rf system/priv-app/StickerCenter
+rm -rf system/priv-app/StickerFaceAR
+rm -rf system/priv-app/StickerStamp
+rm -rf system/priv-app/StickerWatermark
+
+
 echo "Packing the Rom ... "
 echo ""
 zip -r -q -y StockMod.zip META-INF system rootzip boot.img
