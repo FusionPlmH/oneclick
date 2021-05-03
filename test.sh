@@ -178,7 +178,8 @@ fi
 echo "Configuring the System ... "
 echo ""
 sed -i "/ro.build.display.id/d" system/build.prop
-sed -i "3a\ro.build.display.id=Neo-Rom_Slim_0.4" system/build.propsed -i "s/ro.config.tima=1/ro.config.tima=0/g" system/build.prop
+sed -i "3a\ro.build.display.id=Neo-Rom_Slim_0.4" system/build.prop
+sed -i "s/ro.config.tima=1/ro.config.tima=0/g" system/build.prop
 sed -i "s/ro.config.timaversion_info=Knox3.2_../ro.config.timaversion_info=0/g" system/build.prop
 sed -i "s/ro.config.iccc_version=3.0/ro.config.iccc_version=iccc_disabled/g" system/build.prop
 sed -i "s/ro.config.timaversion=3.0/ro.config.timaversion=0/g" system/build.prop
