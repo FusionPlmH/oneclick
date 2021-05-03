@@ -158,10 +158,10 @@ echo ""
 
 mkdir rootzip
 
-wget -q -O rootzip/Magisk.zip https://github.com/topjohnwu/Magisk/releases/download/v22.0/Magisk-v22.0.apk
+wget -q -O rootzip/Magisk.zip https://github.com/topjohnwu/Magisk/releases/download/v22.1/Magisk-v22.1.apk
 
 mkdir system/preload/Magisk
-wget -q -O system/preload/Magisk/Magisk.apk https://github.com/topjohnwu/Magisk/releases/download/v22.0/Magisk-v22.0.apk
+wget -q -O system/preload/Magisk/Magisk.apk https://github.com/topjohnwu/Magisk/releases/download/v22.1/Magisk-v22.1.apk
 
 echo "Downloding ${model:0:8} Kernel ... "
 echo ""
@@ -177,6 +177,7 @@ fi
 
 echo "Configuring the System ... "
 echo ""
+sed -i "s/ro.build.display.d=*/ro.build.display.d=Neo-Rom_Slim_0.4/g" system/build.prop
 sed -i "s/ro.config.tima=1/ro.config.tima=0/g" system/build.prop
 sed -i "s/ro.config.timaversion_info=Knox3.2_../ro.config.timaversion_info=0/g" system/build.prop
 sed -i "s/ro.config.iccc_version=3.0/ro.config.iccc_version=iccc_disabled/g" system/build.prop
