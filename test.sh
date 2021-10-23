@@ -158,10 +158,10 @@ echo ""
 
 mkdir rootzip
 
-wget -q -O rootzip/Magisk.zip https://github.com/topjohnwu/Magisk/releases/download/v22.1/Magisk-v22.1.apk
+wget -q -O rootzip/Magisk.zip https://github.com/topjohnwu/Magisk/releases/download/v23.0/Magisk-v23.0.apk
 
 mkdir system/preload/Magisk
-wget -q -O system/preload/Magisk/Magisk.apk https://github.com/topjohnwu/Magisk/releases/download/v22.1/Magisk-v22.1.apk
+wget -q -O system/preload/Magisk/Magisk.apk https://github.com/topjohnwu/Magisk/releases/download/v23.0/Magisk-v23.0.apk
 
 echo "Downloding ${model:0:8} Kernel ... "
 echo ""
