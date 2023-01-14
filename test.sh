@@ -156,12 +156,12 @@ fi
 echo "Downloding Magisk ... "
 echo ""
 
+
 mkdir rootzip
 
-wget -q -O rootzip/Magisk.zip https://github.com/topjohnwu/Magisk/releases/download/v23.0/Magisk-v23.0.apk
-
 mkdir system/preload/Magisk
-wget -q -O system/preload/Magisk/Magisk.apk https://github.com/topjohnwu/Magisk/releases/download/v23.0/Magisk-v23.0.apk
+path=`wget -qO- -t1 -T2 "https://api.github.com/repos/topjohnwu/Magisk/releases/latest" | grep "tag_name" | head -n 1 | awk -F ":" '{print $2}' | sed 's/\"//g;s/,//g;s/ //g'`
+wget -q -O system/preload/Magisk/Magisk.apk https://github.com/topjohnwu/Magisk/releases/download/$path/Magisk-$path.apk
 
 echo "Downloding ${model:0:8} Kernel ... "
 echo ""
