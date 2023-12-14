@@ -33,17 +33,17 @@ clear
 #echo "Preparing proper environment.." 
 apt update
 apt install -y python2-dev python2 python3 build-essential libssl-dev libffi-dev python3-dev python3-pip simg2img liblz4-tool curl nodejs npm
-clear
+#clear
 echo "Downloading Samloader.."
 pip3 install git+https://github.com/samloader/samloader.git
 echo "Ready Samfirm.."
 sudo npm i -g samfirm
-else
-echo "Skip dependencies Check."
-echo ""
-fi
+#else
+#echo "Skip dependencies Check."
+#echo ""
+#fi
 
-clear
+#clear
  
 #echo "Enter Model(Example:SM-G9550): "
 #read model
