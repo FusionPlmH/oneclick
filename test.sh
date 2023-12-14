@@ -45,14 +45,15 @@ fi
 
 clear
  
-echo "Enter Model(Example:SM-G9550): "
-read model
-echo "Enter Region (Example:CHC): "
-read region
-echo ""
+#echo "Enter Model(Example:SM-G9550): "
+#read model
+#echo "Enter Region (Example:CHC): "
+#read region
+#echo ""
 # check=$(samloader -m $model -r $region checkupdate)
 echo "Dowloading firmware..."
-samfirm -m $model -r $region
+#samfirm -m $model -r $region
+samfirm -m SM-G9550 -r CHC
 input=$(find -name "$model*.zip.enc4" | tee log)
 cat log > tmpf
 sed -i 's/.enc4//' tmpf
