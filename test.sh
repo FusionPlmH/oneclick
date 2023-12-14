@@ -25,12 +25,12 @@ else
 fi
 clear
 
-echo "Do you want to check the require dependencies ? It is recommned to check at first time .(y/n)"
-read check
-if [ $check = "y" ] ; then
-echo -n "Checking dependencies... "
-echo ""
-echo "Preparing proper environment.." 
+#echo "Do you want to check the require dependencies ? It is recommned to check at first time .(y/n)"
+#read check
+#if [ $check = "y" ] ; then
+#echo -n "Checking dependencies... "
+#echo ""
+#echo "Preparing proper environment.." 
 apt update
 apt install -y python-dev python3 build-essential libssl-dev libffi-dev python3-dev python3-pip simg2img liblz4-tool curl nodejs npm
 clear
