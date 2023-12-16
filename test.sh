@@ -60,7 +60,9 @@ sed -i 's/.enc4//' tmpf
 name=$(cat tmpf)
 echo ""
 echo "Decrypting firmware..."
-samloader -m $model -r $region decrypt -v $check -V 4 -i $input -o $name
+#samloader -m $model -r $region decrypt -v $check -V 4 -i $input -o $name
+frigg decrypt -m $model -r $region -v $check -V 4 -i $input -o $name
+
 echo "Done!.."
 echo ""
 
