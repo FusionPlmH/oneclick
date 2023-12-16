@@ -32,12 +32,10 @@ clear
 #echo ""
 #echo "Preparing proper environment.." 
 apt update
-apt install -y python2-dev python2 python3 build-essential libssl-dev libffi-dev python3-dev python3-pip simg2img liblz4-tool curl nodejs npm
+apt install -y python2-dev python2 python3 build-essential libssl-dev libffi-dev python3-dev python3-pip simg2img liblz4-tool curl cargo
 #clear
 echo "Downloading Samloader.."
-pip3 install git+https://github.com/samloader/samloader.git
-echo "Ready Samfirm.."
-sudo npm i -g samfirm
+cargo install --git https://github.com/nickelc/frigg.git
 #else
 #echo "Skip dependencies Check."
 #echo ""
@@ -53,7 +51,8 @@ sudo npm i -g samfirm
 # check=$(samloader -m $model -r $region checkupdate)
 echo "Dowloading firmware..."
 #samfirm -m $model -r $region
-samfirm -m SM-G9550 -r CHC
+#python3 -M "SM-A336B -S "CHC"
+frigg download -m SM-G9500 -r CHC
 input=$(find -name "$model*.zip.enc4" | tee log)
 cat log > tmpf
 sed -i 's/.enc4//' tmpf
