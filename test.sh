@@ -53,7 +53,7 @@ export PATH=/root/.cargo/bin:$PATH
 echo "Dowloading firmware..."
 #samfirm -m $model -r $region
 #python3 -M "SM-A336B -S "CHC"
-frigg -m SM-G9500 -r CHC
+frigg download -m SM-G9500 -r CHC
 input=$(find -name "$model*.zip.enc4" | tee log)
 cat log > tmpf
 sed -i 's/.enc4//' tmpf
