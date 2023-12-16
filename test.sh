@@ -23,7 +23,7 @@ else
     echo "==============="
     exit
 fi
-clear
+#clear
 
 #echo "Do you want to check the require dependencies ? It is recommned to check at first time .(y/n)"
 #read check
@@ -36,6 +36,7 @@ apt install -y python2-dev python2 python3 build-essential libssl-dev libffi-dev
 #clear
 echo "Downloading Samloader.."
 cargo install --git https://github.com/nickelc/frigg.git
+export PATH=/root/.cargo/bin:$PATH
 #else
 #echo "Skip dependencies Check."
 #echo ""
