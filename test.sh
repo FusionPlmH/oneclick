@@ -56,13 +56,10 @@ version=$(frigg check -m $model -r $region --imei $imei | grep Version | cut -c 
 echo "Dowloading firmware..."
 
 frigg download -m $model -r $region  --imei $imei
-input=$(find -name "$model*.zip.enc4" | tee log)
-cat log > tmpf
-sed -i 's/.enc4//' tmpf
-name=$(cat tmpf)
+name=$(find -name "$model*.zip")
 echo ""
 echo "Decrypting firmware..."
-frigg decrypt -m $model --imei $imei -r $region -v $version $input $name
+# frigg decrypt -m $model --imei $imei -r $region -v $version $input $name
 
 echo "Done!.."
 echo ""
