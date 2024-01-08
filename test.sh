@@ -52,7 +52,7 @@ export PATH=/root/.cargo/bin:$PATH
 model="SM-G9500"
 region="TGY"
 imei="354763080305191"
-#version=$(frigg -m $model -r $region -i $imei check)
+version=$(frigg -m $model -r $region  --imei $imei check)
 echo "Dowloading firmware..."
 
 frigg download -m $model -r $region  --imei $imei
@@ -62,7 +62,7 @@ sed -i 's/.enc4//' tmpf
 name=$(cat tmpf)
 echo ""
 echo "Decrypting firmware..."
-#frigg decrypt -m $model -r $region -v $version $input $name
+frigg decrypt -m $model -r $region -v $version $input $name
 
 echo "Done!.."
 echo ""
