@@ -55,8 +55,7 @@ imei="354763080305191"
 version=$(frigg check -m $model -r $region --imei $imei | grep Version | cut -c 1-25 --complement)
 echo "Dowloading firmware..."
 
-echo $version
-#frigg download -m $model -r $region  --imei $imei
+frigg download -m $model -r $region  --imei $imei
 input=$(find -name "$model*.zip.enc4" | tee log)
 cat log > tmpf
 sed -i 's/.enc4//' tmpf
