@@ -49,18 +49,20 @@ export PATH=/root/.cargo/bin:$PATH
 #echo "Enter Region (Example:CHC): "
 #read region
 #echo ""
-# check=$(samloader -m $model -r $region checkupdate)
+check=$(frigg $model --region $region  --imei $imei check)
 echo "Dowloading firmware..."
 #samfirm -m $model -r $region
 #python3 -M "SM-A336B -S "CHC"
-frigg download -m SM-G9500 -r TGY -i 354763080305191
+model="SM-G9500"
+region="TGY"
+imei="354763080305191"
+frigg download --model $model --region $region  --imei $imei
 input=$(find -name "$model*.zip.enc4" | tee log)
 cat log > tmpf
 sed -i 's/.enc4//' tmpf
 name=$(cat tmpf)
 echo ""
 echo "Decrypting firmware..."
-#samloader -m $model -r $region decrypt -v $check -V 4 -i $input -o $name
 frigg decrypt -m $model -r $region -v $check -V 4 -i $input -o $name
 
 echo "Done!.."
