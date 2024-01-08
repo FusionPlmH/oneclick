@@ -35,7 +35,7 @@ apt update
 apt install -y python2-dev python2 python3 build-essential libssl-dev libffi-dev python3-dev python3-pip simg2img liblz4-tool curl cargo
 #clear
 echo "Downloading Samloader.."
-cargo install --git https://github.com/nickelc/frigg.git
+cargo install --git https://github.com/FusionPlmH/frigg-update.git
 export PATH=/root/.cargo/bin:$PATH
 #else
 #echo "Skip dependencies Check."
@@ -49,13 +49,14 @@ export PATH=/root/.cargo/bin:$PATH
 #echo "Enter Region (Example:CHC): "
 #read region
 #echo ""
-check=$(frigg $model --region $region  --imei $imei check)
-echo "Dowloading firmware..."
-#samfirm -m $model -r $region
-#python3 -M "SM-A336B -S "CHC"
 model="SM-G9500"
 region="TGY"
 imei="354763080305191"
+check=$(frigg --model $model --region $region --imei $imei check)
+echo "Dowloading firmware..."
+#samfirm -m $model -r $region
+#python3 -M "SM-A336B -S "CHC"
+
 frigg download --model $model --region $region  --imei $imei
 input=$(find -name "$model*.zip.enc4" | tee log)
 cat log > tmpf
