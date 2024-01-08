@@ -62,7 +62,7 @@ sed -i 's/.enc4//' tmpf
 name=$(cat tmpf)
 echo ""
 echo "Decrypting firmware..."
-frigg decrypt -m $model -r $region -v  --imei $imei --firmware-version $version $input $name
+frigg decrypt -m $model -r $region -v $version --imei $imei$input $name
 
 echo "Done!.."
 echo ""
