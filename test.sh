@@ -52,7 +52,7 @@ export PATH=/root/.cargo/bin:$PATH
 model="SM-G9500"
 region="TGY"
 imei="354763080305191"
-version=$(frigg check -m $model -r $region --imei $imei | grep Version: )
+version=$(frigg check -m $model -r $region --imei $imei | grep Version | cut -c 1-25 --complement)
 echo "Dowloading firmware..."
 
 echo $version
