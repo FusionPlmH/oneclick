@@ -52,10 +52,11 @@ export PATH=/root/.cargo/bin:$PATH
 model="SM-G9500"
 region="TGY"
 imei="354763080305191"
-version=$(frigg -m $model -r $region  --imei $imei check)
+version=$(frigg check -m $model -r $region | grep Version )
 echo "Dowloading firmware..."
 
-frigg download -m $model -r $region  --imei $imei
+echo $version
+#frigg download -m $model -r $region  --imei $imei
 input=$(find -name "$model*.zip.enc4" | tee log)
 cat log > tmpf
 sed -i 's/.enc4//' tmpf
