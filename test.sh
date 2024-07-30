@@ -56,11 +56,11 @@ version=$(frigg check -m $model -r $region --imei $imei | grep Version | cut -c 
 echo "Dowloading firmware..."
 
 frigg download -m $model -r $region  --imei $imei
-input=$(find -name "*.zip.enc4")
-output=$(find -name "$model*.zip")
-echo ""
-echo "Decrypting firmware..."
-frigg decrypt -m $model --imei $imei -r $region -v $version $input $output
+#input=$(find -name "*.zip.enc4")
+name=$(find -name "$model*.zip")
+#echo ""
+#echo "Decrypting firmware..."
+#frigg decrypt -m $model --imei $imei -r $region -v $version $input $output
 
 echo "Done!.."
 echo ""
