@@ -35,7 +35,7 @@ apt update
 apt install -y python2-dev python2 python3 build-essential libssl-dev libffi-dev python3-dev python3-pip simg2img liblz4-tool curl cargo
 #clear
 echo "Downloading Samloader.."
-RUST_BACKTRACE=1 cargo install --git https://github.com/FusionPlmH/frigg-update
+RUST_BACKTRACE=1 cargo install --git https://github.com/FusionPlmH/frigg-update.git
 export PATH=/root/.cargo/bin:$PATH
 #else
 #echo "Skip dependencies Check."
