@@ -59,7 +59,7 @@ frigg download -m $model -r $region  --imei $imei
 name=$(find -name "$model*.zip")
 echo ""
 echo "Decrypting firmware..."
-# frigg decrypt -m $model --imei $imei -r $region -v $version $input $name
+frigg decrypt -m $model --imei $imei -r $region -v $version $input $name
 
 echo "Done!.."
 echo ""
